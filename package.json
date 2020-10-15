@@ -1,0 +1,25 @@
+{
+  "name": "otel-node-basics",
+  "version": "1.0.0",
+  "description": "Install the launcher: ``` npm install lightstep-opentelemetry-launcher-node --save ```",
+  "dependencies": {
+    "express": "^4.17.1",
+    "lightstep-opentelemetry-launcher-node": "^0.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:client": "node traced_client.js",
+    "start:server": "node traced_server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tedsuo/otel-node-basics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tedsuo/otel-node-basics/issues"
+  },
+  "homepage": "https://github.com/tedsuo/otel-node-basics#readme"
+}

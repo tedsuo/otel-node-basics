@@ -23,6 +23,6 @@ function makeRequest() {
   });
 }
 
-for (i = 0; i<60; i++) {
-    makeRequest();
+for (let i = 0; i < 60; i++) {
+  makeRequest();
 }

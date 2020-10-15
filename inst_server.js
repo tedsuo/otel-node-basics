@@ -1,20 +1,19 @@
 const opentelemetry = require('@opentelemetry/api');
 const http = require('http');
+  const express = require('express');
+const router = express.Router();
 
+const app = express();
 const tracer = opentelemetry.trace.getTracer('server');
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World');
+http.createServer({}, app).listen(9000, () => {
+  console.log('server running');
 });
-
-server.listen(9000, '127.0.0.1', () => {
+router.route('/').get((req, res, next) => {
   const currentSpan = tracer.getCurrentSpan();
-  currentSpan.setAttribute("foo", "bar")
-             .addEvent('sent', { id: '42', key: 'value' });
-  childSpan = tracer.startSpan('my-span');
-  tracer.withSpan(childSpan, () => {
-    console.log(`Server running at http://localhost:9000/`);
-  })
+  currentSpan.setAttribute('foo', 'bar')
+    .addEvent('sent', { id: '42', key: 'value' });
+  res.status(200).json('OK');
 });
+app.use('/', router);
+
