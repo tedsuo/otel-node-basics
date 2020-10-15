@@ -5,7 +5,15 @@ Install the launcher:
 npm install lightstep-opentelemetry-launcher-node --save
 ```
 
-Install [instrumentation libraries](https://github.com/open-telemetry/opentelemetry-js/tree/240f852cc41707c751f28811b7ce3d243382e3dd#node-plugins):
+Run the traced entry points in two terminals:
+
+```
+node traced_server.js
+```
+
+```
+node traced_client.js
+```
 
 Notes:
 * `export OTEL_LOG_LEVEL=debug` is your friend
