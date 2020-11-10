@@ -8,7 +8,7 @@ Hello there! You've found one of my OpenTelemetry playgrounds. This example cont
 This example uses [OpenTelemetry JS v0.12](https://github.com/open-telemetry/opentelemetry-js/tree/v0.12.0) and  Lightstep as the backend. It contains heavily commented examples of every pattern needed to trace your code with OpenTelemetry.
 
 **Relevant handy links:**
-* [Free Lightstep Developer Account](https://app.lightstep.com/signup/developer?signup_source=otelnodebasics): make a free account if you don't already have one, or modify the setup instructions to match your analysis tool of choice.
+* [Free Lightstep Community Account](https://app.lightstep.com/signup/developer?signup_source=otelnodebasics): make a free account if you don't already have one, or modify the setup instructions to match your analysis tool of choice.
 * OTel Node Launcher: https://github.com/lightstep/otel-launcher-node/
 * Quickstart Guide: https://opentelemetry.lightstep.com/js
 
