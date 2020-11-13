@@ -1,10 +1,10 @@
 {
   "name": "otel-node-basics",
   "version": "1.0.0",
-  "description": "Install the launcher: ``` npm install lightstep-opentelemetry-launcher-node --save ```",
+  "description": "All you need to know about tracing in OpenTelemetry",
   "dependencies": {
     "express": "^4.17.1",
-    "lightstep-opentelemetry-launcher-node": "^0.11.0"
+    "lightstep-opentelemetry-launcher-node": "^0.12.0"
   },
   "devDependencies": {},
   "scripts": {

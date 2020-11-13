@@ -8,7 +8,7 @@ const { lightstep } = require('lightstep-opentelemetry-launcher-node');
 // propagators: tracecontext highly recommended. Also include b3 if you need to
 //              transition from b3 headers to tracecontext headers.
 const sdk = lightstep.configureOpenTelemetry({
-  accessToken: '<ACCESS TOKEN>',
+  accessToken: 'ACCESS TOKEN',
   serviceName: 'hello-client',
   serviceVersion: 'v1.2.3',
   propagators: 'tracecontext,b3',
